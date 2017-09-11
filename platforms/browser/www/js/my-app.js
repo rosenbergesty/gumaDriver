@@ -36,28 +36,24 @@ function logInPopup(){
             username = username.toLowerCase();
             var data = database.ref('drivers/').orderByChild('email').equalTo(username);
             data.once('value', function(snapshot){
+                console.log(snapshot.val());
                 if(snapshot.val() != null){
+                    console.log(snapshot);
                     snapshot.forEach(function(childSnapshot){
                         if(childSnapshot.val() != null){
                             if(childSnapshot.val().password == password){
                                 logIn(childSnapshot.key);  
                             } else {
-                                myApp.alert('Incorrect password. Please try again.', '');
-                                logInPopup();
+                                myApp.alert('Incorrect password. Please try again.', '', logInPopup);
                             }
-                        } else {
-                            myApp.alert('Incorrect username. Please try again.', '');
-                            logInPopup();
                         }
                     });   
                 } else {
-                    myApp.alert('Incorrect username. Please try again.', '');
-                    logInPopup();
+                    myApp.alert('Incorrect username. Please try again.', '', logInPopup);
                 }
             });
         }, function(){
-            myApp.alert('Please log in to continue', '');
-            logInPopup();
+            myApp.alert('Please log in to continue', '', logInPopup);
         }); 
     }
 }
@@ -263,7 +259,7 @@ myApp.onPageInit('switch', function(page){
                 }).then(function(){
                     $('.preloader').hide();
                     mainView.router.loadPage('stops.html');
-                });           
+                });
             });
         }
 
