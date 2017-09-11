@@ -22,9 +22,9 @@
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <name>Guma</name>
+    <name>Guma Drivers</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        App for drivers to submit forms on fulfillment
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team

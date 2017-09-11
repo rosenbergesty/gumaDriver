@@ -60,7 +60,7 @@ function logInPopup(){
 
 function logIn(driverId){
     window.localStorage.setItem("guma-login", driverId);
-    mainView.router.loadPage('stops.html');
+    mainView.router.reloadPage('stops.html');
 }
 
 myApp.onPageInit('*', function(page){
