@@ -1,0 +1,107 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link back">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Guma App</div>
+        <div class="right">
+            <a href="#" class="link save">
+                <strong><span>Save</span></strong>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="switch" class="page">
+        <div class="page-content">
+
+            <div class="content-block-title">Pickup Details</div>
+            <div class="list-block form">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="itemt-title label"> Container #</div>
+
+                                <div class="item-input">
+                                    <input type="number" id="containerNum" placeholder="118">
+                                </div>   
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-block-title">Dropoff Details</div>
+            <div class="list-block form">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Container #</div>
+
+                                <div class="item-input">
+                                    <input type="number" id="container2Num" placeholder="118">
+                                </div>   
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker">
+                            <select name="borough" id="borough">
+                                <option value="manhattan">Manhattan</option>
+                                <option value="brooklyn">Brooklyn</option>
+                                <option value="queens">Queens</option>
+                                <option value="bronx">Bronx</option>
+                                <option value="staten-island">Staten Island</option>
+                            </select>
+
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">Borough</div>
+                                    <div class="item-after">Brooklyn</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Comments</div>
+
+                                <div class="item-input">
+                                    <textarea id="comments"></textarea>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-block-title">Signature</div>
+            <div class="list-block form signature">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <div id="signature"></div>
+                                </div>   
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-25 col-dark">
+                <span class="preloader"></span>
+            </div>
+        </div>
+    </div>
+</div>

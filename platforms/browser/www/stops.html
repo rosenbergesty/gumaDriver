@@ -1,0 +1,38 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="center sliding">Guma App</div>
+        <div class="right">
+            <a href="#" class="link signout">
+                <i class="f7-icons">logout</i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="stops" class="page">
+        <!-- Search bar -->
+        <form class="searchbar">
+            <div class="searchbar-input">
+                <input type="search" placeholder="Search">
+                <a href="#" class="searchbar-clear"></a>
+            </div>
+            <a href="#" class="searchbar-cancel">Cancel</a>
+        </form>
+
+        <!-- Search bar overlay-->
+        <div class="searchbar-overlay"></div>
+
+        <div class="page-content">
+            <div class="content-block searchbar-not-found">
+                    Nothing found
+            </div>
+
+            <div class="list-block virtual-list media-list list-block-search searchbar-found" id="stopsList">
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link back">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Guma App</div>
+        <div class="right">
+            <a href="#" class="signout link">
+                <i class="f7-icons">logout</i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="driver" class="page toolbar-fixed">
+        <div class="toolbar messagebar">
+          <div class="toolbar-inner">
+            <textarea placeholder="Address" id="address"></textarea>
+            <p class="buttons-row" id="size">
+                <a href="#" class="button active button-round">10</a>
+                <a href="#" class="button button-round">20</a>
+                <a href="#" class="button button-round">30</a>
+                <a href="#" class="button button-round">40</a>
+            </p>
+            <p class="buttons-row small" id="action">
+                <a href="#" class="button active button-round">PU</a>
+                <a href="#" class="button button-round">DD</a>
+                <a href="#" class="button button-round">SW</a>
+            </p>
+            <!--<a href="#" class="smart-select" data-open-in="picker" data-picker-close-text="Close" id="action">
+                <select>
+                    <option value="drop">Dropoff</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="switch">Switch</option>
+                </select>
+                <div class="item-after">Something</div><i class="f7-icons">down</i>
+            </a>-->
+            <a href="#" id="add" class="button button-round"><i class="f7-icons">check</i></a>
+          </div>
+        </div>   
+        <div class="page-content messages-content" id="stops">
+            <div class="messages">
+                <!-- List all stops here -->
+            </div>
+            <p class="empty-state">
+                No stops found.
+            </p>
+        </div>
+    </div>
+</div>
