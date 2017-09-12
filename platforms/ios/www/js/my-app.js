@@ -33,7 +33,7 @@ function logInPopup(){
         logIn(window.localStorage.getItem("guma-login"));
     } else {
         myApp.modalLogin("Please log in to continue", "Log In", function(username, password){
-            username = username.toLowerCase();
+            username = $.trim(username.toLowerCase());
             var data = database.ref('drivers/').orderByChild('email').equalTo(username);
             data.once('value', function(snapshot){
                 console.log(snapshot.val());

@@ -45,6 +45,17 @@
   margin: 0;
 }
 
+/* Index */
+.home{
+  background: #00835B;
+}
+.content-block.logo img{
+  display: inline-block;
+  margin: auto;
+  margin-top: calc(40vh - 50px);
+  margin-left: calc(45vw - 50px);
+}
+
 /* Driver List */
 #stopsList ul{
   height: auto !important;
